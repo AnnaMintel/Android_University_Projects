@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- block 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- 1 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center_vertical"
+            android:text="1" />
+
+        <!-- 2 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center_horizontal"
+            android:text="2" />
+
+        <!-- 3 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center_horizontal|bottom"
+            android:text="3" />
+
+        <!-- 4 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="end"
+            android:text="4" />
+
+    </LinearLayout>
+
+    <!-- block 2 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- 5 -->
+        <TextView
+            android:id="@+id/view5"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_purple"
+            android:gravity="center"
+            android:text="5" />
+
+        <!-- 6 -->
+        <TextView
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/view5"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="6" />
+
+        <!-- 7 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view6"
+            android:layout_alignStart="@id/view6"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:text="7" />
+
+    </RelativeLayout>
+
+    <!-- block 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- 8 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:text="8" />
+
+        <!-- 9 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="9" />
+
+        <!-- 10 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="10" />
+
+    </LinearLayout>
+
+</LinearLayout>
