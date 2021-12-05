@@ -1,4 +1,4 @@
-package com.daria.calculator;
+package com.example.demoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
